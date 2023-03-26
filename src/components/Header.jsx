@@ -91,35 +91,6 @@ const Header = () => {
           </a>
         </div>
       </div>
-      {/* <header className="max-w-7xl mx-auto flex justify-between items-center sticky">
-        <img src={logo} alt="" />
-        <nav className="flex gap-10">
-          <a
-            className="capitalize text-white hover:text-orange-500 transition-all font-semibold"
-            href="#"
-          >
-            Order
-          </a>
-          <a
-            className="capitalize text-white hover:text-orange-500 transition-all font-semibold"
-            href="#"
-          >
-            Order review
-          </a>
-          <a
-            className="capitalize text-white hover:text-orange-500 transition-all font-semibold"
-            href="#"
-          >
-            Manage Inventory
-          </a>
-          <a
-            className="capitalize text-white hover:text-orange-500 transition-all font-semibold"
-            href="#"
-          >
-            Login
-          </a>
-        </nav>
-      </header> */}
     </div>
   );
 };
