@@ -3,7 +3,7 @@ import BannerImg from "../assets/images/Group-12.jpg";
 
 const Banner = () => {
   return (
-    <div className="max-w-7xl mx-auto h-screen flex flex-wrap justify-center lg:justify-between items-center gap-10">
+    <div className="max-w-7xl mx-auto h-screen flex flex-wrap justify-center lg:justify-between items-center gap-10 overflow-hidden mb-10">
       <div className="px-6 text-center lg:text-left">
         <small className="text-[#FF9900]">Sale up to 70% off</small>
         <div className="my-16">

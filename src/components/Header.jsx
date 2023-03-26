@@ -3,7 +3,7 @@ import logo from "../assets/images/Logo.svg";
 
 const Header = () => {
   return (
-    <div className="w-full  py-6 bg-[#1C2B35]">
+    <div className="w-full py-1 bg-[#1C2B35]">
       <div className="navbar max-w-7xl mx-auto flex justify-between items-center sticky">
         <div className="navbar-start">
           <div className="dropdown">

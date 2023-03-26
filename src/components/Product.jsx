@@ -11,8 +11,8 @@ const Product = () => {
   }, []);
 
   return (
-    <div className="">
-      <h2 className="text-3xl text-black font-semibold capitalize text-center my-6">
+    <div className="my-16">
+      <h2 className="text-3xl text-black font-semibold capitalize text-center ">
         Product Zone
       </h2>
       <div className="md:grid md:grid-cols-2 lg:grid-cols-4">
