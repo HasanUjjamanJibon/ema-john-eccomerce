@@ -14,7 +14,7 @@ const Banner = () => {
             Discover all the new arrivals of ready-to-wear collection.
           </p>
         </div>
-        <button class=" bg-[#FF9900] text-[#0E161A] uppercase px-10 py-3 text-xl">
+        <button className=" bg-[#FF9900] text-[#0E161A] uppercase px-10 py-3 text-xl">
           shop now
         </button>
       </div>
