@@ -3,8 +3,8 @@ import logo from "../assets/images/Logo.svg";
 
 const Header = () => {
   return (
-    <div className="w-full  py-6 bg-[#1C2B35]">
-      <header className="max-w-7xl mx-auto flex justify-between items-center">
+    <div className="w-full  py-6 bg-[#1C2B35] ">
+      <header className="max-w-7xl mx-auto flex justify-between items-center sticky">
         <img src={logo} alt="" />
         <nav className="flex gap-10">
           <a
