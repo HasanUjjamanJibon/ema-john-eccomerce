@@ -13,10 +13,12 @@ const CartSummary = ({ cart, setCart }) => {
     totalShippingCharge = totalShippingCharge + product.shipping;
     tax = (totalPrice * 7) / 100;
     grandTotal = totalPrice + totalShippingCharge + tax;
+    swal("Successfully", "Data Added", "success");
   }
 
   const clearReset = () => {
     setCart([]);
+    swal("Successful", "Clear Data", "success");
   };
 
   return (
