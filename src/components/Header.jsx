@@ -1,5 +1,8 @@
 import React from "react";
 import logo from "../assets/images/Logo.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
+import Modal from "./Modal";
 
 const Header = () => {
   return (
@@ -60,6 +63,15 @@ const Header = () => {
                   Login
                 </a>
               </li>
+              <li>
+                <label
+                  htmlFor="my-modal-3"
+                  className="capitalize text-black transition-all font-semibold"
+                >
+                  <FontAwesomeIcon icon={faCartPlus} />
+                  <span>Cart</span>
+                </label>
+              </li>
             </ul>
           </div>
           <img src={logo} alt="" />
@@ -91,6 +103,7 @@ const Header = () => {
           </a>
         </div>
       </nav>
+      <Modal />
     </header>
   );
 };

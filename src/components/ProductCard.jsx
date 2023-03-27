@@ -8,12 +8,15 @@ const ProductCard = (props) => {
 
   return (
     <div className="card w-full shadow-md flex-col justify-between rounded-lg hover:shadow-2xl cursor-pointer">
+      {/* card image */}
       <div className="rounded-lg">
         <img
           src={img}
           className="h-60 image-full w-full object-cover object-center "
         />
       </div>
+
+      {/* card body */}
       <div className="px-4 my-5">
         <h3 className=" text-md font-bold text-gray-700">{name}</h3>
         <p className=" text-lg font-medium text-gray-900">Price : ${price}</p>
@@ -25,6 +28,8 @@ const ProductCard = (props) => {
           <span>Catagory : {category}</span>
         </div>
       </div>
+
+      {/* card footer-add to cart button */}
       <div
         onClick={() => handleAddToCart(props.product)}
         className=" text-center border-t-2 p-5 bg-[#ECEFF1] "

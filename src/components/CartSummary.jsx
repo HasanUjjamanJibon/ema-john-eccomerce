@@ -40,7 +40,12 @@ const CartSummary = ({ cart, setCart }) => {
           grand total : ${grandTotal.toFixed(2)}
         </p>
       </div>
+
+      {/* cart summary button */}
+
       <div className="px-6 text-center">
+        {/* clear all data button */}
+
         <button
           onClick={clearReset}
           className="btn btn-error block capitalize w-full mb-5"
@@ -49,6 +54,7 @@ const CartSummary = ({ cart, setCart }) => {
           <FontAwesomeIcon icon={faTrash} />
         </button>
 
+        {/* review order button */}
         <button className="btn btn-warning block capitalize w-full">
           <span className="mr-4">review order</span>
 
