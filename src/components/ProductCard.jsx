@@ -2,10 +2,11 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartPlus, faStar } from "@fortawesome/free-solid-svg-icons";
 
-const ProductCard = ({ category, name, seller, price, ratings, img }) => {
-  //   console.log(img);
+const ProductCard = (props) => {
+  const { category, name, seller, price, ratings, img } = props.product;
+
   return (
-    <div className="card w-full shadow-xl flex-col justify-between rounded-lg">
+    <div className="card w-full shadow-md flex-col justify-between rounded-lg hover:shadow-2xl cursor-pointer">
       <div className="rounded-lg">
         <img
           src={img}

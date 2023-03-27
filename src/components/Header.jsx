@@ -3,8 +3,8 @@ import logo from "../assets/images/Logo.svg";
 
 const Header = () => {
   return (
-    <div className="w-full py-1 bg-[#1C2B35]">
-      <div className="navbar max-w-7xl mx-auto flex justify-between items-center sticky">
+    <header className="w-full py-1 bg-[#1C2B35] fixed top-0 z-40">
+      <nav className="navbar max-w-7xl mx-auto flex justify-between items-center ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -30,7 +30,7 @@ const Header = () => {
             >
               <li>
                 <a
-                  className="capitalize text-black hover:text-orange-500 transition-all font-semibold"
+                  className="capitalize text-black  transition-all font-semibold"
                   href="#"
                 >
                   Order
@@ -38,15 +38,15 @@ const Header = () => {
               </li>
               <li tabIndex={0}>
                 <a
-                  className="capitalize text-black hover:text-orange-500 transition-all font-semibold"
+                  className="capitalize text-black  transition-all font-semibold"
                   href="#"
                 >
-                  Order review
+                  Order Review
                 </a>
               </li>
               <li>
                 <a
-                  className="capitalize text-black hover:text-orange-500 transition-all font-semibold"
+                  className="capitalize text-black  transition-all font-semibold"
                   href="#"
                 >
                   Manage Inventory
@@ -54,7 +54,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  className="capitalize text-black hover:text-orange-500 transition-all font-semibold"
+                  className="capitalize text-black transition-all font-semibold"
                   href="#"
                 >
                   Login
@@ -90,8 +90,8 @@ const Header = () => {
             Login
           </a>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 };
 
