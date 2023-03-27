@@ -4,6 +4,7 @@ import { faCartPlus, faStar } from "@fortawesome/free-solid-svg-icons";
 
 const ProductCard = (props) => {
   const { category, name, seller, price, ratings, img } = props.product;
+  const handleAddToCart = props.handleAddToCart;
 
   return (
     <div className="card w-full shadow-md flex-col justify-between rounded-lg hover:shadow-2xl cursor-pointer">
@@ -24,7 +25,10 @@ const ProductCard = (props) => {
           <span>Catagory : {category}</span>
         </div>
       </div>
-      <div className=" text-center border-t-2 p-5 bg-[#ECEFF1] ">
+      <div
+        onClick={() => handleAddToCart(props.product)}
+        className=" text-center border-t-2 p-5 bg-[#ECEFF1] "
+      >
         <a
           href="#
         "

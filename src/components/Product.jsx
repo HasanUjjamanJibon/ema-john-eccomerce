@@ -3,13 +3,19 @@ import CartSummary from "./CartSummary";
 import ProductCard from "./ProductCard";
 
 const Product = () => {
-  const [products, setsetProduct] = useState([]);
+  const [products, setProduct] = useState([]);
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
-      .then((data) => setsetProduct(data.slice(0, 3)));
+      .then((data) => setProduct(data));
   }, []);
+
+  const handleAddToCart = (product) => {
+    const newcart = [...cart, product];
+    setCart(newcart);
+  };
 
   return (
     <div className="my-16">
@@ -19,14 +25,18 @@ const Product = () => {
       <div className="md:grid md:grid-cols-2 lg:grid-cols-4">
         <div className="col-span-3 px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-20">
           {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard
+              key={product.id}
+              product={product}
+              handleAddToCart={handleAddToCart}
+            />
           ))}
         </div>
-        <div className="col-span-1 bg-[#ECEFF1] hidden lg:block  my-20 ">
+        <div className="col-span-1 bg-[#ECEFF1] hidden lg:block  my-20 sticky top-16 h-fit pb-5">
           <h2 className="text-center text-xl font-bold capitalize py-4 border-b-2 bg-[#e0eaf1] ">
             cart summary
           </h2>
-          <CartSummary></CartSummary>
+          <CartSummary cart={cart} setCart={setCart}></CartSummary>
         </div>
       </div>
     </div>
