@@ -41,8 +41,7 @@ const CartSummary = ({ cart, setCart }) => {
         </p>
       </div>
 
-      {/* cart summary button */}
-
+      {/* cart summary */}
       <div className="px-6 text-center">
         {/* clear all data button */}
 

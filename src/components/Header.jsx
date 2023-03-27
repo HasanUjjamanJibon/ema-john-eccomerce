@@ -32,34 +32,22 @@ const Header = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a
-                  className="capitalize text-black  transition-all font-semibold"
-                  href="#"
-                >
+                <a className="capitalize text-black  transition-all font-semibold">
                   Order
                 </a>
               </li>
               <li tabIndex={0}>
-                <a
-                  className="capitalize text-black  transition-all font-semibold"
-                  href="#"
-                >
+                <a className="capitalize text-black  transition-all font-semibold">
                   Order Review
                 </a>
               </li>
               <li>
-                <a
-                  className="capitalize text-black  transition-all font-semibold"
-                  href="#"
-                >
+                <a className="capitalize text-black  transition-all font-semibold">
                   Manage Inventory
                 </a>
               </li>
               <li>
-                <a
-                  className="capitalize text-black transition-all font-semibold"
-                  href="#"
-                >
+                <a className="capitalize text-black transition-all font-semibold">
                   Login
                 </a>
               </li>
@@ -77,28 +65,16 @@ const Header = () => {
           <img src={logo} alt="" />
         </div>
         <div className="navbar-end hidden lg:flex gap-10">
-          <a
-            className="capitalize text-white hover:text-orange-500 transition-all font-semibold"
-            href="#"
-          >
+          <a className="capitalize text-white hover:text-orange-500 transition-all font-semibold">
             Order
           </a>
-          <a
-            className="capitalize text-white hover:text-orange-500 transition-all font-semibold"
-            href="#"
-          >
+          <a className="capitalize text-white hover:text-orange-500 transition-all font-semibold">
             Order review
           </a>
-          <a
-            className="capitalize text-white hover:text-orange-500 transition-all font-semibold"
-            href="#"
-          >
+          <a className="capitalize text-white hover:text-orange-500 transition-all font-semibold">
             Manage Inventory
           </a>
-          <a
-            className="capitalize text-white hover:text-orange-500 transition-all font-semibold"
-            href="#"
-          >
+          <a className="capitalize text-white hover:text-orange-500 transition-all font-semibold">
             Login
           </a>
         </div>

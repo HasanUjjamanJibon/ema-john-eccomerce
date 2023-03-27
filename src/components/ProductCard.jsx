@@ -34,10 +34,7 @@ const ProductCard = (props) => {
         onClick={() => handleAddToCart(props.product)}
         className=" text-center border-t-2 p-5 bg-[#ECEFF1] "
       >
-        <a
-          href="#
-        "
-        >
+        <a>
           <span className="text-md font-semibold capitalize mr-2">
             add to cart
           </span>
